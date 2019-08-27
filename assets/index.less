@@ -126,7 +126,7 @@ body html{
     background-color: @bgc;
     padding-left: 6%;
     padding-right: 6%;
-    margin-top: 80%;
+    margin-top: 90%;
     #hotel{
         background-color: @bgcW;
         width: 100%;
@@ -201,15 +201,36 @@ body html{
 
 
 // 媒体查询
-
+// iphone5
+@media only screen and (max-width: 320px){
+    body,html{
+        width: 320;
+        font-size: 12px;
+    }
+    #footer{
+        margin-top: 90%;
+        #hotel{
+            ul{
+                li{
+                    div:last-child{
+                        span{
+                            line-height: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 // 手机
-@media only screen and (max-width: 480px){
+@media only screen and (min-width: 321px){
     body,html{
         width: 480;
         font-size: 12px;
     }
     #footer{
+        margin-top: 85%;
         #hotel{
             ul{
                 li{
@@ -230,6 +251,7 @@ body html{
         font-size: 26px;
     }
     #footer{
+        margin-top: 90%;
         #hotel{
             ul{
                 li{

@@ -104,7 +104,7 @@ body html {
   background-color: #EAF1F4;
   padding-left: 6%;
   padding-right: 6%;
-  margin-top: 80%;
+  margin-top: 90%;
 }
 #footer #hotel {
   background-color: #fff;
@@ -164,11 +164,27 @@ body html {
   padding-right: 5px;
   text-align: center;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 320px) {
+  body,
+  html {
+    width: 320;
+    font-size: 12px;
+  }
+  #footer {
+    margin-top: 90%;
+  }
+  #footer #hotel ul li div:last-child span {
+    line-height: 18px;
+  }
+}
+@media only screen and (min-width: 321px) {
   body,
   html {
     width: 480;
     font-size: 12px;
+  }
+  #footer {
+    margin-top: 85%;
   }
   #footer #hotel ul li div:last-child span {
     line-height: 18px;
@@ -179,6 +195,9 @@ body html {
   html {
     width: 768;
     font-size: 26px;
+  }
+  #footer {
+    margin-top: 90%;
   }
   #footer #hotel ul li div:last-child span {
     height: 45px;
