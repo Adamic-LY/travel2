@@ -4,237 +4,119 @@
   margin: 0;
   list-style: none;
 }
-body html {
-  width: 100%;
-}
-#header,
-#container,
-#footer {
-  box-sizing: border-box;
-  width: 100%;
-  padding: 4%;
-}
-#header {
-  padding-bottom: 10%;
-  height: 30%;
-  position: relative;
-  background-color: #6784D6;
-  z-index: 100;
-}
-#header img {
-  display: block;
-  width: 30%;
-}
-#container {
-  background-color: #EAF1F4;
-  padding-bottom: 8%;
-  width: 100%;
-  margin-bottom: 10%;
-}
-#container #bg {
-  box-sizing: border-box;
-  position: absolute;
-  float: left;
-  top: 10%;
-  margin-left: 0;
-  left: 0;
-  width: 100%;
-  height: 40%;
-  margin-top: -5%;
-  background-color: #6784D6;
-}
-#container #title {
-  border-radius: 10% 10% 0 0 ;
-  position: absolute;
-  left: 4%;
-  padding: 8% 2%;
-  top: 12%;
-  right: 4%;
-  width: 92%;
-  height: 30%;
-  z-index: 100;
-  box-sizing: border-box;
-  background-color: #fff;
-  font-weight: 700;
-  padding-bottom: 10%;
-}
-#container #title li {
-  margin-bottom: 2%;
-}
-#container #title li span:nth-child(2n) {
-  padding-right: 2%;
-}
-#container #content {
-  box-sizing: border-box;
-  width: 100%;
-  background-color: #fff;
-  right: 0;
-  left: 0;
-  padding-left: 4%;
-  padding-bottom: 8%;
-  margin-top: 20%;
-  position: absolute;
-  z-index: 1000;
-}
-#container #content ul {
-  border-left: 1px dashed #6784D6;
-}
-#container #content ul li {
-  padding-left: 4%;
-  margin-top: 4%0;
-}
-#container #content ul li div {
-  padding-top: 2%;
-  padding-left: 4%;
-}
-#container #content ul li div img {
-  margin-left: -12%;
-  margin-right: 4%;
-  padding-top: 2%;
-  display: inling-block;
-  box-sizing: border-box;
-  width: 6%;
-  height: 6%;
-}
-#footer {
-  padding-top: 20%;
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
-  background-color: #EAF1F4;
-  padding-left: 6%;
-  padding-right: 6%;
-  margin-top: 90%;
-  padding-bottom: 10%;
-}
-#footer #hotel {
-  background-color: #fff;
-  width: 100%;
-  height: 100%;
-  padding-top: 10%;
-}
-#footer #hotel #image img {
-  display: block;
-  height: 4%;
-  width: 4%;
-  float: left;
-  margin-top: 1%;
-  margin-right: 4%;
-  padding-left: 5%;
-}
-#footer #hotel ul {
-  padding-top: 10%;
-  box-sizing: border-box;
-}
-#footer #hotel ul li {
-  box-sizing: border-box;
-  padding-left: 8%;
-  margin-top: 2%;
-  height: 50%;
-  position: relative;
-}
-#footer #hotel ul li div:first-child {
-  box-sizing: border-box;
-  width: 10px;
-  height: 10px;
-  float: left;
-  margin-left: -5%;
-  margin-top: 2%;
-  border-radius: 50%;
-  background-color: #6784D6;
-}
-#footer #hotel ul li div:last-child {
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  padding: 1%;
-  box-sizing: border-box;
-}
-#footer #hotel ul li div:last-child span {
-  background-color: #6784D6;
-  color: #fff;
-  display: block;
-  height: 20px;
-}
-#footer #hotel ul li div:last-child span:first-child {
-  float: left;
-  width: 20px;
-  border-radius: 50% 0 0 50%;
-}
-#footer #hotel ul li div:last-child span:last-child {
-  float: left;
-  padding-right: 5px;
-  text-align: center;
-}
-@media only screen and (max-width: 320px) {
+@media only screen and (min-width: 320px) {
   body,
   html {
-    width: 320;
-    font-size: 12px;
-  }
-  #footer {
-    margin-top: 90%;
-  }
-  #footer #hotel ul li div:last-child span {
-    line-height: 18px;
+    font-size: 12.8px;
   }
 }
-@media only screen and (min-width: 321px) {
+@media only screen and (min-width: 360px) {
   body,
   html {
-    width: 480;
-    font-size: 12px;
+    font-size: 14.4px;
   }
-  #footer {
-    margin-top: 85%;
+  body #center #host #hostName,
+  html #center #host #hostName,
+  body #center #host #hostTitle,
+  html #center #host #hostTitle {
+    margin-bottom: 0.5rem;
   }
-  #footer #hotel ul li div:last-child span {
-    line-height: 18px;
+}
+@media only screen and (min-width: 375px) {
+  body,
+  html {
+    font-size: 15px;
+  }
+  body #center #host #hostName,
+  html #center #host #hostName,
+  body #center #host #hostTitle,
+  html #center #host #hostTitle {
+    margin-bottom: 0.5rem;
+  }
+}
+@media only screen and (min-width: 390px) {
+  body,
+  html {
+    font-size: 15.6px;
+  }
+  body #center #host #hostName,
+  html #center #host #hostName,
+  body #center #host #hostTitle,
+  html #center #host #hostTitle {
+    margin-bottom: 0.5rem;
+  }
+}
+@media only screen and (min-width: 414px) {
+  body,
+  html {
+    font-size: 16.56px;
+  }
+  body #center #host #hostName,
+  html #center #host #hostName,
+  body #center #host #hostTitle,
+  html #center #host #hostTitle {
+    margin-bottom: 0.5rem;
+  }
+}
+@media only screen and (min-width: 480px) {
+  body,
+  html {
+    font-size: 19.2px;
+  }
+  body #center #host #hostName,
+  html #center #host #hostName,
+  body #center #host #hostTitle,
+  html #center #host #hostTitle {
+    margin-bottom: 0.5rem;
   }
 }
 @media only screen and (min-width: 768px) {
   body,
   html {
-    width: 768;
-    font-size: 26px;
+    font-size: 30px;
   }
-  #footer {
-    margin-top: 90%;
+  body #center #host #hostName,
+  html #center #host #hostName,
+  body #center #host #hostTitle,
+  html #center #host #hostTitle {
+    margin-bottom: 0.5rem;
   }
-  #footer #hotel ul li div:last-child span {
-    height: 45px;
-    line-height: 40px;
+  body #center #host #hostName span,
+  html #center #host #hostName span,
+  body #center #host #hostTitle span,
+  html #center #host #hostTitle span {
+    font-size: 20px;
   }
-  #footer #hotel ul li div:last-child span:first-child {
-    width: 45px;
+  body #center #host #hostTitle,
+  html #center #host #hostTitle {
+    float: right;
   }
 }
 @media only screen and (min-width: 980px) {
   body,
   html {
-    width: 980;
     font-size: 36px;
   }
-  #footer #hotel ul li div:last-child span {
-    height: 55px;
-    line-height: 50px;
+  body #center #host #hostName,
+  html #center #host #hostName,
+  body #center #host #hostTitle,
+  html #center #host #hostTitle {
+    margin-bottom: 0.5rem;
   }
-  #footer #hotel ul li div:last-child span:first-child {
-    width: 55px;
+  body #center #host #hostName span,
+  html #center #host #hostName span,
+  body #center #host #hostTitle span,
+  html #center #host #hostTitle span {
+    font-size: 26px;
+  }
+  body #center #host #hostTitle,
+  html #center #host #hostTitle {
+    float: right;
   }
 }
 @media only screen and (min-width: 1200px) {
   body,
   html {
-    width: 100%;
     font-size: 40px;
-  }
-  #footer #hotel ul li div:last-child span {
-    height: 60px;
-    line-height: 55px;
-  }
-  #footer #hotel ul li div:last-child span:first-child {
-    width: 60px;
   }
 }
