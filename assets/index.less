@@ -1,18 +1,190 @@
-// rem布局   25份
-
-@bgcB:#6784D6;
-@bgcW:#fff;
-@bgc:#EAF1F4;
-
-
 
 *{
-    font-family: 'microsoft yahei';
-    padding: 0;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     list-style: none;
+    font-family: 'microsoft yahei';
+}
+html,body{
+    background-color: #eaf1f4;
+    font-size: 30px;
+    overflow: hidden;
+    overflow-y: auto;
+    width: 100%;
+}
+#header,#center,#footer{
+    padding-left: 1rem;
+    width: 100%;
 }
 
+// 顶部logo
+#header{
+    position: absolute;
+    width: 100%;
+    height: 12rem;
+    background-color: #6784d6;
+    img{
+        display: block;
+        width: 6rem;
+        padding-top: 0.5rem;
+    }
+}
+// 顶部样式完成
+
+
+// 出行信息
+#center{
+    top: 4rem;
+    position: absolute;
+    z-index: 1000;
+    margin: 0 1rem;
+    margin-right: 1rem;
+    width: 92%;
+    // width: 23rem;
+	height: 26rem;
+	background-color: #fefefe;
+    border-radius: 1rem;
+    #title{
+        ul{
+            li{
+                margin-top: 0.8rem;
+                height: 1rem;
+                color: #000;
+                font-weight: 700;
+            }
+        }
+    }
+    #content{
+        margin-top: 1rem;
+        ul{
+            height: 17rem;
+            border-left: dashed 1px #6784d6;
+            margin-left: 0.2rem;
+            float: left;
+            li{
+                height: 5rem;
+                font-size: 0.9rem;
+                div{
+                    height: 1.3rem;
+                }
+            }
+        }
+        ul:last-child{
+            border: none;
+        }
+        ul:first-child{
+            li{
+                img{
+                    display: block;
+                    width: 1rem;
+                    padding-top: 0.3rem;
+                    margin-left: -0.5rem;
+                }
+            }
+        }
+    }
+}
+
+// 出行信息布局完成
+
+
+// 底部酒店信息
+#footer{
+    position: absolute;
+    top: 31rem;
+    width: 92%;
+    background-color: #fefefe;
+    margin: 0 1rem;
+    padding-top: 1rem;
+    border-radius: 1rem;
+    #hotel{
+        width: 100%;
+        #image{
+            height: 2.2rem;
+            img{
+                display: block;
+                width: 1.2rem;
+                float: left;
+            }
+            span{
+                color: #000;
+                font-weight: 700;
+                font-size: 0.9rem;
+                display: block;
+                float: left;
+                margin-left: 0.5rem;
+            }
+        }
+        ul{
+            width: 20rem;
+            float: left;
+            li{
+                height: 5rem;
+                div{
+                    font-size: 0.9rem;
+                    height: 1.35rem;
+                    span{
+                        display: block;
+                    }
+                    span:first-child{
+                        font-weight: 700;
+                        float: left;
+                    }
+                    span:last-child{
+                        background-color: #6784d6;
+                        float: right;
+                        color: #fefefe;
+                        padding: 0.2rem;
+                        padding-left: 0.8rem;
+                        border-radius: 1rem 0 0 1rem;
+                    }
+                }
+            }
+        }
+        ul:nth-child(2){
+            width: 1.8rem;
+            div{
+                height: 0.5rem;
+                width: 0.5rem;
+                border-radius: 50%;
+                background-color: #6784d6;
+                margin-top: 0.5rem;
+            }
+        }
+    }
+}
+
+// 底部布局完成
+
+
+// 背景图
+#bgi{
+    position: absolute;
+    top: 18rem;
+    right: 1rem;
+    z-index: 10000;
+    width: 9rem;
+    height: 10rem;
+    img{
+        display: block;
+        position: absolute;
+    }
+    img:first-child{
+        width: 8rem;
+        right: 1rem;
+    }
+    img:nth-child(2){
+        width: 2.5rem;
+        height: 2.5rem;
+        bottom: 1rem;
+    }
+    img:last-child{
+        height: 4rem;
+        right: 0;
+        bottom: 0;
+    }
+}
 
 
 
@@ -29,80 +201,32 @@
 @media only screen and (min-width: 360px){
     body,html{
         font-size: 14.4px;
-        #center{
-            #host{
-                #hostName,#hostTitle{
-                    margin-bottom: 0.5rem;
-                }
-            }
-        }
     }
 }
 @media only screen and (min-width: 375px){
     body,html{
         font-size: 15px;
-        #center{
-            #host{
-                #hostName,#hostTitle{
-                    margin-bottom: 0.5rem;
-                }
-            }
-        }
     }
 }
 @media only screen and (min-width: 390px){
     body,html{
         font-size: 15.6px;
-        #center{
-            #host{
-                #hostName,#hostTitle{
-                    margin-bottom: 0.5rem;
-                }
-            }
-        }
     }
 }
 @media only screen and (min-width: 414px){
     body,html{
         font-size: 16.56px;
-        #center{
-            #host{
-                #hostName,#hostTitle{
-                    margin-bottom: 0.5rem;
-                }
-            }
-        }
     }
 }
 @media only screen and (min-width: 480px){
     body,html{
         font-size: 19.2px;
-        #center{
-            #host{
-                #hostName,#hostTitle{
-                    margin-bottom: 0.5rem;   
-                }
-            }
-        }
     }
 }
 //平板 
 @media only screen and (min-width: 768px){
     body,html{
         font-size: 30px;
-        #center{
-            #host{
-                #hostName,#hostTitle{
-                    margin-bottom: 0.5rem;   
-                    span{
-                        font-size: 20px;
-                    }
-                }
-                #hostTitle{
-                    float: right;
-                }
-            }
-        }
     }
 }
 
@@ -110,19 +234,6 @@
 @media only screen and (min-width: 980px){
     body,html{
         font-size: 36px;
-        #center{
-            #host{
-                #hostName,#hostTitle{
-                    margin-bottom: 0.5rem;   
-                    span{
-                        font-size: 26px;
-                    }
-                }
-                #hostTitle{
-                    float: right;
-                }
-            }
-        }
     }
 }
 
@@ -132,3 +243,4 @@
         font-size: 40px;
     }
 }
+
